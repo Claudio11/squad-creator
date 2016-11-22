@@ -18,7 +18,7 @@ export class Player extends Vertex {
       return this._name;
     }
 
-    set name (id: string) {
+    set name (name: string) {
       this._name = name;
     }
 
@@ -45,7 +45,7 @@ export class Player extends Vertex {
     }
 
     getPositionChemistry () {
-        
+
     }
 
     constructor (data: any) {

@@ -1,16 +1,26 @@
 Player = require("./player.model.ts");
-PlayerPool = require("./playerPool.model.ts");
+FormationGraph = require("./formationGraph.model.ts");
 
 export class Team {
 
-    private _playerPool: PlayerPool;
+    private _name: string;
+    private _formation: FormationGraph;
 
-    get playerPool () : PlayerPool {
-      return this._playerPool;
+
+    get name () : string {
+      return this._name;
     }
 
-    set playerPool (playerPool: PlayerPool) {
-      this._playerPool = playerPool;
+    set name (id: string) {
+      this._name = name;
+    }
+
+    get formation () : PlayerPool {
+      return this._formation;
+    }
+
+    set formation (formation: PlayerPool) {
+      this._formation = formation;
     }
 
     constructor (data: any) {

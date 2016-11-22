@@ -1,7 +1,7 @@
 Graph = require("../dataStructures/graph.model.ts");
 Player = require("../player.model.ts")
 
-export class PlayerPool extends Graph {
+export class PlayerPoolGraph extends Graph {
 
     constructor (data: any) {
         super(data);
