@@ -2,6 +2,7 @@
 
 import { Graph } from "./graph.model";
 import { Edge } from "./edge.model";
+import { Vertex } from "./vertex.model"
 
 export class EdgeWeightedGraph extends Graph {
 
@@ -30,7 +31,7 @@ export class EdgeWeightedGraph extends Graph {
      *
      *  @return Edge between given vertices.
      */
-    getEdge (vertexSource: Vertex, vertexTarget: Vertex): void {
+    getEdge (vertexSource: Vertex, vertexTarget: Vertex): Edge {
         let edge: Edge;
         for (let i in this.edges) {
             if (this.edges[i].isEdgeOfVertices(vertexSource, vertexTarget)) {

@@ -42,6 +42,7 @@ export class Graph {
     }
 
     // Adds an edge between vertexSource and vertexTarget
+    addEdge (vertexSource: Vertex, vertexTarget: Vertex, edgeValue?: number): void;
     addEdge (vertexSource: Vertex, vertexTarget: Vertex): void {
         vertexSource.addSibling(vertexTarget);
         vertexTarget.addSibling(vertexSource);

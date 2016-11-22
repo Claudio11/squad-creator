@@ -32,11 +32,18 @@ export class Edge {
       this._value = value;
     }
 
-    constructor (data: any) {
-        if (data) {
-            this.vertexSource = data.vertexSource;
-            this.vertexTarget = data.vertexTarget;
-            this.value = data.value;
+    constructor (vertexSource: Vertex, vertexTarget: Vertex, value: number);
+    constructor (json: any);
+    constructor (vertexOrJson: any | Vertex, vertexTarget: Vertex, value: number) {
+        if (vertexOrJson instanceof Vertex) {
+            this.vertexSource = vertexOrJson;
+            this.vertexTarget = vertexTarget;
+            this.value = value;
+        }
+        else {
+            this.vertexSource = vertexOrJson.vertexSource;
+            this.vertexTarget = vertexOrJson.vertexTarget;
+            this.value = vertexOrJson.value;
         }
     }
 
@@ -47,7 +54,6 @@ export class Edge {
             let otherVertex = (this.vertexSource.equals(vertexSource)) ? vertexTarget : vertexSource;
             if (otherVertex.equals(this.vertexTarget)) {
                 equals = true;
-                break;
             }
         }
         return equals;
