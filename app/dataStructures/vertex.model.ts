@@ -23,7 +23,7 @@ export class Vertex {
       this._element = element;
     }
 
-    constructor () {
+    constructor (data: any) {
         if (data) {
             this.siblings = data.siblings || [];
             this.element = data.element;
