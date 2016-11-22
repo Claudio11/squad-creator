@@ -1,5 +1,7 @@
-let Vertex = require("../dataStructures/vertex.model.js");
-let Constants = require("../constants.ts")
+'use strict';
+
+import { Vertex } from "../dataStructures/vertex.model";
+import { Constants } from "../constants";
 
 export class Player extends Vertex {
 

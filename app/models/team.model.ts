@@ -1,5 +1,7 @@
-Player = require("./player.model.ts");
-FormationGraph = require("./formationGraph.model.ts");
+'use strict';
+
+import { Player } from "./player.model";
+import { FormationGraph } from "./formationGraph.model";
 
 export class Team {
 
@@ -15,11 +17,11 @@ export class Team {
       this._name = name;
     }
 
-    get formation () : PlayerPool {
+    get formation () : FormationGraph {
       return this._formation;
     }
 
-    set formation (formation: PlayerPool) {
+    set formation (formation: FormationGraph) {
       this._formation = formation;
     }
 

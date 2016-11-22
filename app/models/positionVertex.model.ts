@@ -1,6 +1,8 @@
-let Vertex = require("../dataStructures/vertex.model.js");
-let Constants = require("../constants.ts");
-let Player = require("./player.model.ts");
+'use strict';
+
+import { Vertex } from "../dataStructures/vertex.model";
+import { Constants } from "../constants";
+import { Player } from "./player.model";
 
 export class PositionVertex extends Vertex {
 

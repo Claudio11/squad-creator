@@ -1,5 +1,7 @@
-PlayerPoolGraph = require("./playerPoolGraph.model.ts");
-PositionVertex = require("../positionVertex.model.ts")
+'use strict';
+
+import { PlayerPoolGraph } from "./playerPoolGraph.model";
+import { PositionVertex } = from "../positionVertex.model";
 
 export class FormationGraph extends PlayerPoolGraph {
 

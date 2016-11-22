@@ -1,5 +1,7 @@
-let Graph = require("./graph.model.ts");
-let Edge = require("./edge.model.ts");
+'use strict';
+
+import { Graph } from "./graph.model";
+import { Edge } from "./edge.model";
 
 export class EdgeWeightedGraph extends Graph {
 

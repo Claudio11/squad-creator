@@ -1,3 +1,5 @@
+'use strict';
+
 // Bidirectional Vertex...
 
 export class Vertex {

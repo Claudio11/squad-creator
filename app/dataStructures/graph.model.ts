@@ -1,5 +1,7 @@
-let Vertex = require("./vertex.model.ts");
-let Edge = require("./edge.model.ts")
+'use strict';
+
+import { Vertex } from "./vertex.model";
+import { Edge } from "./edge.model";
 
 export class Graph {
 

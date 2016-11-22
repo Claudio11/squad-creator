@@ -1,6 +1,8 @@
-let Vertex = require("./vertex.model.ts")
+'use strict';
 
-export class Graph {
+import { Vertex } from "./vertex.model";
+
+export class Edge {
 
     private _vertexSource: Vertex;
     private _vertexTarget: Vertex;
