@@ -6,6 +6,7 @@ import { PlayerService } from "./player.service"
 export class TeamService {
 
     private _name: string;
+    private _conditions: Condition[];
 
     get name () : string {
       return this._name;
@@ -21,5 +22,6 @@ export class TeamService {
 
     createTeamBy (conditions: any[]): Team {}
 
+    getBestCandidates (conditions: any[]): Player [] {}  // First run
 
 }

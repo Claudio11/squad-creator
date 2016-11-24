@@ -48,6 +48,6 @@ export class PlayerService {
     getPlayersByPriceWithin (min: number, max:number): Player[] {}
     getPlayersByNation (nations: Nation[]): Player[] {}
     getPlayersByLeague (leagues: League[]): Player[] {}
-    getPlayersByClub (clubs: club[]): Player[] {}
+    getPlayersByClub (clubs: Club[]): Player[] {}
 
 }
