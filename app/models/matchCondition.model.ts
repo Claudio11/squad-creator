@@ -21,7 +21,7 @@ export class MatchCondition extends Condition {
             }
         }
 
-        return (isPresent) ? this.relevance: 0;
+        return (isPresent) ? this.currentRelevance: 0;
     }
 
     constructor (data: any) {

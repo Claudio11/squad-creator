@@ -3,23 +3,23 @@
 import { Vertex } from "../dataStructures/vertex.model";
 import { Constants } from "../constants";
 import { Player } from "./player.model";
+import { Position } from "./position.model";
 
 export class PositionVertex extends Vertex {
 
-    private _position: string;
+    private _position: Position;
+    // element of type Player.
 
-    get position () : string {
+    get position () : Position {
       return this._position;
     }
 
-    set position (position: string) {
+    set position (position: Position) {
       this._position = position;
     }
 
     /**
      *  Set the chemistry for the current player.
-     *
-     *  @param teamPosition Position in which he plays currently.
      *
      *  @return Chemistry for this player playing in this position.
      */

@@ -45,6 +45,7 @@ export class PlayerService {
     }
 
     getPlayersByChemistryWithin (min: number, max:number): Player[] {}
+    getPlayersBySkillWithin (min: number, max:number): Player[] {}
     getPlayersByPriceWithin (min: number, max:number): Player[] {}
     getPlayersByNation (nations: Nation[]): Player[] {}
     getPlayersByLeague (leagues: League[]): Player[] {}

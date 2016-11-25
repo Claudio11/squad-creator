@@ -14,11 +14,11 @@ export class PercentageCondition extends Condition {
         let calculatedRelevance:number;
 
         if (minValue <= playerValueForAttribute) {
-            calculatedRelevance = this.relevance;
+            calculatedRelevance = this.currentRelevance;
         }
         else {
             let diff = min - playerValueForAttribute;
-            calculatedRelevance = this.relevance * 100 / diff;  // TODO: try different ratios.
+            calculatedRelevance = this.currentRelevance * 100 / diff;  // TODO: try different ratios.
         }
 
         return calculatedRelevance;

@@ -58,4 +58,15 @@ export class Graph {
         }
         return isVertexPresentPresent;
     }
+
+    getVertexWithMoreSiblings (): Vertex {
+        let vertexWithMoreSiblings: Vertex;
+        let maxSiblingsLength: number = 0;
+        for (var i in this.vertices) {
+            if (this.vertices[i].siblings.length > maxSiblingsLength) {
+                vertexWithMoreSiblings = this.vertices[i];
+            }
+        }
+        return vertexWithMoreSiblings;
+    }
 }
