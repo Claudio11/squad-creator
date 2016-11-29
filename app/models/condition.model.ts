@@ -36,6 +36,15 @@ export class Condition {
     }
 
     /**
+     *  Applies a negative ratio to the current relevance (real number from 0 to 1).
+     *
+     *  @param Ratio to discount from a relevance.
+     */
+    applyNegativeRatioOnCurrentRelevance (negativeRatio: number) {
+      this._currentRelevance = currentRelevance - (currentRelevance * negativeRatio);
+    }
+
+    /**
      *  Return the score of the given player for this condition.
      */
     getScore (player: Player) {

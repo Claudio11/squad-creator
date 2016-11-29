@@ -9,7 +9,7 @@ export class PercentageCondition extends Condition {
      *  Return the score of the given player for this condition.
      */
     getScore (player: Player): number {
-        let minValue = ((this.value - 10) > 0) ? this.value - 10: 0;
+        let minValue = ((this.value - 5) > 0) ? this.value - 5: 0;
         let playerValueForAttribute = player[this.playerAttribute];
         let calculatedRelevance:number;
 

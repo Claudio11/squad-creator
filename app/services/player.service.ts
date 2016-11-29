@@ -32,7 +32,7 @@ export class PlayerService {
      *
      *  @param Position to obtain.
      *
-     *  @return Players from this pool that plays in the position given by parameter.
+     *  @return Players from this pool that plays in the position given by parameter, empty array if no player is found.
      */
     getPlayersByPosition (position:string): Player[] {
         let playersByPosition: Player[] = [];
