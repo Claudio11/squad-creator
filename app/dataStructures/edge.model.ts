@@ -49,7 +49,7 @@ export class Edge {
 
     // Return true if this edge has both vertex passed by parameter.
     isEdgeOfVertices(vertexSource: Vertex, vertexTarget: Vertex): boolean {
-        // ...
+        // ....
         let equals: boolean = false;
         if (this.vertexSource.equals(vertexSource) || this.vertexSource.equals(vertexTarget)) {
             let otherVertex = (this.vertexSource.equals(vertexSource)) ? vertexTarget : vertexSource;
